@@ -8,15 +8,17 @@ html(lang="ru")
    meta(name="keywords" content=" ")
    link(href="css/style.css", rel="stylesheet")
    
-   title TABS
+   title SCROLLBAR
  body
-   // START TABS
-   include component/tabs/tabs
-   // END TABS
+
+   // START SCROLLBAR
+   include component/scrollbar/scrollbar
+   include component/scrollbar/scrollbarx
+   // END SCROLLBAR
 
    // include plugin jquery
    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
-   //START TABS
-   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js")
-   script(src="js/tabs.js")
+   //START SCROLLBAR
+   script(src="js/perfect-scrollbar.js")
+   script(src="js/scrollbar.js")
