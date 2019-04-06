@@ -12,7 +12,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    dots: true,
+    dots: false,
     centerMode: true,
     focusOnSelect: true,
     prevArrow: "<img src='images/icon13.png' class='prev' alt='1'>",

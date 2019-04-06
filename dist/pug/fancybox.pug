@@ -7,20 +7,17 @@ html(lang="ru")
    meta(name="description" content=" ")
    meta(name="keywords" content=" ")
    link(href="css/style.css", rel="stylesheet")
+   link(href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet")
 
-   title Midas
-
+   title Fancybox
  body
-   
+   // START FANCYBOX
+   include component/fancybox/form
+   // END FANCYBOX
 
    // include plugin jquery
    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
    //Start fancybox
    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js")
-
-   //Start scroll
-   script(src="js/scroll.js")
-
-   //Start menu
-   script(src="js/menu.js")
+   script(src="js/form.js")
