@@ -1,0 +1,15 @@
+.bread-crumbs{
+  li {
+     display: inline-table;
+     a{
+      color: #92c516;
+      font-size: 16px;
+      transition: color 0.5s;
+      &:after{
+        content: '/';
+        margin: 0 5px 0 8px;
+        color: #666666;
+      }
+     }
+  }
+}
