@@ -19,7 +19,7 @@ gulp.task('pug', function () {
 	       .pipe(loadPlugins.pug({
 	       	 pretty: true
 	       }))
-		   .pipe(gulp.dest('build'))
+		   .pipe(gulp.dest('build/'))
 		   .on('end', browserSync.reload);
 });
 
