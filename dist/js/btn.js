@@ -1,5 +1,5 @@
-$('#more span').click(function(e) {
-    $('#more span').text(function(_,txt) {
+$('#more').click(function(e) {
+    $('#more ').text(function(_,txt) {
         var ret='';
 
         if ( txt == 'Подробнее..' ) {
@@ -12,3 +12,10 @@ $('#more span').click(function(e) {
     return false;
     e.preventDefault();
 });
+
+
+
+  $('#more').on( "click", function(e) {
+     $('.down-block').slideToggle("slow");
+     e.preventDefault();
+   });
