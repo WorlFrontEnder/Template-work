@@ -11,16 +11,16 @@ html(lang="ru")
    title Midas
 
  body
-   
+  mixin list(href, target, text)
+   ul
+    li
+     a(href= href, target= target)= text
 
-   // include plugin jquery
-   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-
-   //Start fancybox
-   script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js")
-
-   //Start scroll
-   script(src="js/scroll.js")
-
-   //Start menu
-   script(src="js/menu.js")
+  +list('slider.html', '_target', 'slider page')
+  +list('fancybox.html', '_target', 'fancybox page')
+  +list('mask.html', '_target', 'mask input page')
+  +list('metis-menu.html', '_target', 'metis menu page') 
+  +list('rub.html', '_target', 'rub page')
+  +list('bread-crumbs.html', '_target', 'Bread-crumbs page')
+  +list('tabs.html', '_target', 'Tabs page')
+  +list('scrollbar.html', '_target', 'scrollbar page')
